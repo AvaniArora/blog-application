@@ -1,0 +1,75 @@
+body{
+  background-color: rgb(224, 222, 208);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin:0;
+}
+/*banner and top nave and bottom nav*/
+.container
+{
+  width:80%;
+  margin: auto;
+  overflow: hidden;
+
+}
+header{
+  background-color: rgb(43, 89, 119);
+  color: rgb(207, 153, 36);
+  min-height: 30px;
+}
+header a{
+  color: rgb(207, 153, 36);
+  text-decoration-line: none;
+}
+header li{
+  padding-right: 20px;
+  padding-top: 40px;
+  float: left;
+  display: inline;
+
+}
+header #logo
+{
+  float:left;
+  padding-top: 20px;
+}
+header ul{
+  float:right;
+
+}
+ #showcase
+{
+  min-width: 400px;
+  /*background:url('../images/banner.jpg') no-repeat;*/
+  background-color: rgb(163, 144, 57);
+}
+
+#blogs
+{
+  margin:auto;
+  width: 80%;
+}
+.article h1{
+
+adding-right: 50%;
+padding-left: 50%;
+align:left;
+}
+
+.article img{
+  margin: 10px;
+  height:200px;
+  width:200px;
+  align: left;
+
+}
+#categories{
+  background-color: rgb(43, 89, 119);
+  margin-top: 200px;
+  color: rgb(236, 225, 203);
+}
+#categories a{
+  color:rgb(236, 225, 203);
+  text-decoration-line: none;
+}
