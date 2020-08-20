@@ -19,27 +19,17 @@ header{
   color: rgb(207, 153, 36);
   min-height: 30px;
 }
-header a{
-  color: rgb(207, 153, 36);
-  text-decoration-line: none;
+
+header ul{
+  align:left;
+
 }
 header li{
-  padding-right: 20px;
-  padding-top: 40px;
-  float: left;
   display: inline;
 
 }
-header #logo
-{
-  float:left;
-  padding-top: 20px;
-}
-header ul{
-  float:right;
 
-}
- #showcase
+ .showcase
 {
   min-width: 400px;
   /*background:url('../images/banner.jpg') no-repeat;*/
@@ -51,23 +41,35 @@ header ul{
   margin:auto;
   width: 80%;
 }
-.article h1{
 
-adding-right: 50%;
-padding-left: 50%;
-align:left;
+  .article h1{
+  margin-left:0;
+  align: left;
+  }
+  .article img
+  {
+    margin-left:20px;
+    width:200px;
+    height:200px;
+  }
+
+@media screen and (min-width:800pxpx){
+  header li
+  {
+    float:left;
+  }
+.article h1{
+margin-left: 50%;
 }
-.toggle
-{
-  display:none;
-}
+
 
 .article img{
   margin: 10px;
-  height:200px;
-  width:200px;
+  height:50%;
+  width:50%;
   align: left;
 
+}
 }
 #categories{
   background-color: rgb(43, 89, 119);

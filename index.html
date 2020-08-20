@@ -8,29 +8,40 @@
   <script src="dom.js"></script>
 </head>
 <body>
-  <header>
+  <header id="headerPage">
     <div class="container"> <!--added a container to keep header contents center aligned and with padding on both sides-->
      <div id="logo">
        <h1>Art Blog</h1>
       </div>
-      <nav class="topnav">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li onclick="goToHome()">Home</a></li>
+          <li onclick="goToAbout()">About</a></li>
+          <li onclick="goToContact()">Contact</li>
         </ul>
-      </nav>
+
     </div>
 
   </header>
-  <section id="showcase">
+
+  <div id="showcasehome" class="showcase">
     <div class="container">
       <h1>Art Forms of India</h1>
       <p>This blog contains various art forms of India. Read more about each of of them</p>
     </div>
+  </div>
+    <section id="showcaseabout" style="display:none" class="showcase">
+      <div class="container">
+        <h1>About Us</h1>
+      </div>
+    </section >
+    <section id="showcasecontact" style="display:none" class="showcase">
+      <div class="container">
+        <h1>Contact Us</h1>
+      </div>
+    </section >
 
-  </section>
-  <section id="blogs">
+
+  <div id="blogs">
     <div class="article">
       <h1>Madhubani</h1>
       <img src="./images/madhubani.jpg" alt="Madhubani Art">
@@ -68,7 +79,20 @@
       <button  id="button4"onclick="toggleText(this.id)">Read More</button>
 
     </div>
+  </div>
+  <section id="aboutinfo" style="display:none">
+    <p>
+      This is some info.
+    </p>
   </section>
+  <section id="contactinfo" style="display:none">
+    <p>
+      Address: New Delhi -18, India <br>
+      Email Id:avani.arora13@gmail.com <br>
+      Telephone:+91 -8178477324
+    </p>
+  </section>
+
 <section id="categories">
   <div class="container">
     <nav>
@@ -81,6 +105,7 @@
     </nav>
   </div>
 </section>
+
 
 </body>
 </html>

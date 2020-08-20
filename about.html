@@ -5,14 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About us</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="dom.js"></script>
 </head>
 <body>
-  <header>
+  <header id="headerPage">
+    <div class="container"> <!--added a container to keep header contents center aligned and with padding on both sides-->
+     <div id="logo">
+       <h1>Art Blog</h1>
+      </div>
+      <nav class="topnav">
+        <ul>
+          <li onclick="goToHome()">Home</a></li>
+          <li onclick="goToAbout()">About</a></li>
+          <li onclick="goToContact()">Contact</li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+  <section id="showcase">
     <div class="container">
       <h1>About Us</h1>
     </div>
-  </header>
-  <section>
+
+  </section >
+  <section style="margin-left: 20px">
     <p>
       This is some info.
     </p>
