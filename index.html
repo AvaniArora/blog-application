@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog App |Home Page</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="dom.js"></script>
 </head>
 <body>
   <header>
@@ -12,7 +13,7 @@
      <div id="logo">
        <h1>Art Blog</h1>
       </div>
-      <nav>
+      <nav class="topnav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -33,35 +34,38 @@
     <div class="article">
       <h1>Madhubani</h1>
       <img src="./images/madhubani.jpg" alt="Madhubani Art">
-
-      <p>These paintings find their origins and derive their name from a village called ‘Madhubani’ in Bihar. These paintings were first painted by the artists hailing from this village.</p>
-      <a href="madhubani.html" class="extraInfoLink">Read More</a>
+      <p id="para1" class="articlepara" >These paintings find their origins and derive their name from a village called ‘Madhubani’ in Bihar. <span class="hiddentext" style="display:none">These paintings were first painted by the artists hailing from this village.</span>
+      </p>
+      <button  id="button1" class="articlebutton" onclick="toggleText(this.id)">Read More</button>
 
     </div>
     <br>
     <div class="article">
       <h1>Warli</h1>
       <img src="./images/warli.jpg" alt="Warli art">
-      <p> Warli art is a 400-year-old tribal art form from Maharashtra. Painted mostly by the Warli tribe women, paintings in this art form are based on nature, harvest, weddings and fertility. </p>
-      <a href="warli.html" class="extraInfoLink">Read More</a>
+      <p id="para2" class="articlepara"> Warli art is a 400-year-old tribal art form from Maharashtra. <span class="hiddentext" style="display:none">Painted mostly by the Warli tribe women, paintings in this art form are based on nature, harvest, weddings and fertility. </span></p>
+      <button id="button2" onclick="toggleText(this.id)">Read More</button>
 
     </div>
     <br>
     <div class="article">
       <h1>Kalamkari</h1>
+      <div >
       <img src="./images/kalamkari.jpg" alt="Kalamkari art">
 
-      <p>Kalamkari literally means, “pen-art”. Kalamkari paintings are either hand painted or block printed on cotton fabric. This art form flourished under the rule of the Golconda Sultanat.</p>
-      <a href="kalamkari.html" class="extraInfoLink">Read More</a>
-
+      <p id="para3">
+        Kalamkari literally means, “pen-art”. Kalamkari paintings are either hand painted or block printed on cotton fabric. This art form flourished under the rule of the Golconda <span class="hiddentext" style="display:none">Kalamkari literally means, “pen-art”. Kalamkari paintings are either hand painted or block printed on cotton fabric. This art form flourished under the rule of the Golconda Sultanat. It was first developed and evolved at Machilipatnam in Andhra Pradesh but its popularity soon spread to the other states. As far as the popular belief goes, in olden days, groups of artisans, musicians and singers known as chitrakattis would travel from village to village and narrate tales of Hindu mythology. As time passed, they even started illustrating these stories on canvas and thus Kalamkari was born.</span>
+      </p>
+      <button id="button3" onclick="toggleText(this.id)">Read More</button>
+        </div>
     </div>
     <br>
     <div class="article">
       <h1>Mughal</h1>
       <img src="./images/mughal.jpg" alt="Mughal Art">
 
-      <p>The Mughal painting reflects a synthesis of Indian, Persian and Islamic art styles. This art form evolved between 16th and 19th centuries. The theme centred around battles, receptions, court scenes, hunting scenes, legendary stories, portraits and wildlife.</p>
-      <a href="mughal.html" class="extraInfoLink">Read More</a>
+      <p id="para4">The Mughal painting reflects a synthesis of Indian, Persian and Islamic art styles. This art form evolved between 16th and 19th centuries. <span class="hiddentext" style="display:none">The theme centred around battles, receptions, court scenes, hunting scenes, legendary stories, portraits and wildlife.</span></p>
+      <button  id="button4"onclick="toggleText(this.id)">Read More</button>
 
     </div>
   </section>
